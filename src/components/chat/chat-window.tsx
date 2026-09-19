@@ -25,7 +25,6 @@ const transport = new DefaultChatTransport<UIMessage<ChatMessageMeta>>({ api: "/
 const WELCOME: UIMessage<ChatMessageMeta> = {
   id: "welcome",
   role: "assistant",
-  metadata: { createdAt: Date.now() },
   parts: [
     {
       type: "text",
@@ -52,7 +51,11 @@ export function ChatWindow() {
 
   useEffect(() => {
     focusInput();
-  }, [focusInput]);
+    // Stamp the welcome message on the client so server and browser HTML match.
+    setMessages((current) =>
+      current.map((m) => (m.id === "welcome" && !m.metadata ? { ...m, metadata: { createdAt: Date.now() } } : m)),
+    );
+  }, [focusInput, setMessages]);
 
   useEffect(() => {
     if (status === "ready" || status === "error") focusInput();
