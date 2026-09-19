@@ -90,7 +90,7 @@ export function ChatWindow() {
   return (
     <section
       aria-label="Student Support AI chat"
-      className="chat-panel flex h-dvh w-full flex-col overflow-hidden sm:h-[min(88dvh,900px)] sm:rounded-3xl sm:border"
+      className="chat-panel flex h-dvh w-full flex-col overflow-hidden sm:h-[min(92dvh,1000px)] sm:rounded-3xl sm:border"
     >
       <ChatHeader onClear={handleClear} canClear={canClear} />
 
