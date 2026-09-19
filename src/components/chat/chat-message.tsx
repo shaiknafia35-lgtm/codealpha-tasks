@@ -35,7 +35,7 @@ export function ChatMessage({ message, isStreaming }: ChatMessageProps) {
           {isUser ? (
             <p className="whitespace-pre-wrap leading-relaxed">{text}</p>
           ) : (
-            <MessageResponse isAnimating={isStreaming}>{text}</MessageResponse>
+            <MessageResponse isAnimating={Boolean(isStreaming)}>{text}</MessageResponse>
           )}
         </MessageContent>
         {isUser && (
