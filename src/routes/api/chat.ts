@@ -4,6 +4,7 @@ import {
   getLovableAiGatewayRunId,
   withLovableAiGatewayRunIdHeader,
 } from "@/lib/ai-gateway.server";
+import { COLLEGE_FAQ_TEXT, NO_INFO_FALLBACK } from "@/lib/college-faq";
 import { createOpenAI } from "@ai-sdk/openai";
 import { createFileRoute } from "@tanstack/react-router";
 import { convertToModelMessages, streamText, type UIMessage } from "ai";
