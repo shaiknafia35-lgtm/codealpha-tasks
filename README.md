@@ -1,136 +1,62 @@
-# Campus Companion AI
+# CodeAlpha Cloud Computing Internship – AI Chatbot
 
-Build a complete responsive AI-powered chatbot web application called "Student Support AI Chatbot".
+## Task 2 – AI-Powered Chatbot
 
-Purpose:
+This project is an AI-powered chatbot developed as part of the CodeAlpha Cloud Computing Internship.
 
-This project is for a Cloud Computing internship task. It should demonstrate an AI-powered chatbot that provides instant responses to user queries.
+The chatbot provides users with an interactive interface where they can enter questions and receive AI-generated responses.
 
-Technology:
+## Project Objective
+
+The objective of this project is to develop a simple and responsive AI chatbot that can:
+
+- Accept user questions and messages
+- Generate AI-powered responses
+- Provide an easy-to-use chat interface
+- Work smoothly across different screen sizes
+- Provide a simple and interactive user experience
+
+## Technologies Used
 
 - React
-
 - TypeScript
-
 - Tailwind CSS
+- Vite
+- AI API Integration
+- HTML & CSS
 
-- Modern responsive UI
+## Main Features
 
-- AI API integration
+### 1. Chat Interface
 
-Main features:
+A clean and responsive interface for communicating with the AI chatbot.
 
-1. Chat interface
+### 2. User Messages
 
-Create a clean chatbot interface with:
+Users can type and submit questions through the chat input.
 
-- User messages
+### 3. AI Responses
 
-- AI messages
+The chatbot processes user queries and provides AI-generated responses.
 
-- Message timestamps
+### 4. Responsive Design
 
-- Chat input
+The interface is designed to work on desktop and mobile screen sizes.
 
-- Send button
+### 5. Reusable Components
 
-- Loading indicator
+The application uses reusable React components to keep the project organized and maintainable.
 
-- Clear chat button
+## Project Structure
 
-2. AI responses
+```text
+src/
+├── components/
+├── pages/
+├── App.tsx
+└── main.tsx
 
-Integrate an AI model/API so that the chatbot can generate responses to user questions.
-
-The chatbot should act as a college student support assistant.
-
-System behavior:
-
-- Answer questions clearly and politely.
-
-- Help students with general college-related questions.
-
-- If information is unavailable, clearly say that the information is not available instead of inventing official information.
-
-- Keep responses concise and easy to understand.
-
-3. Predefined FAQ support
-
-Add quick question buttons such as:
-
-- College timings
-
-- Library information
-
-- Exam information
-
-- Attendance
-
-- Courses
-
-- Placement support
-
-When the user clicks one, send the question to the chatbot.
-
-4. Chat history
-
-Keep the conversation visible during the current session.
-
-5. UI
-
-Create a professional modern chatbot interface with:
-
-- Header containing "Student Support AI"
-
-- Chat area
-
-- Quick question buttons
-
-- Input box
-
-- Send button
-
-- Responsive mobile and desktop layout
-
-6. Error handling
-
-If the AI API fails:
-
-- Show a friendly error message.
-
-- Do not expose API keys.
-
-- Do not crash the application.
-
-7. Code quality
-
-Use reusable React components and clean TypeScript code.
-
-Important:
-
-Use a secure environment variable for the AI API key.
-
-Never hard-code the API key in frontend source code.
-
-Make the chatbot actually functional rather than creating only a static UI.
-
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/304f9601-f44f-4e43-88d8-f4b573067b98).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+public/
+package.json
+vite.config.ts
+README.md
